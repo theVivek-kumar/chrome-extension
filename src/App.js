@@ -1,9 +1,9 @@
 
 import { useState } from 'react';
 import './App.css';
-import Clock from './Components/Clock/Clock';
-import Weather from './Components/Weather';
-import Home from './home';
+// import Clock from './Components/Clock/Clock';
+// import Weather from './Components/Weather';
+import Home from './Components/home';
 
 function App() {
   const [name, setName] = useState()
