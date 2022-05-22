@@ -1,0 +1,67 @@
+*{
+  margin: 0; padding: 0;box-sizing: border-box;
+}
+:root{
+  font-family:  "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.heading--1{
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 5rem;
+  font-weight: 400;
+
+}
+.time-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 5rem;
+
+}
+.weather-input{
+  display: flex;
+  float: right;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: 600;
+  color: gold;
+}
+.input-name-section{
+  border: none;
+  border-bottom: 2px solid white;
+  width: 50rem;
+  height: 1.5rem;
+  padding: 1.2rem;
+  font-size: 2rem;
+  margin-top: 5rem;
+  background-color: transparent;
+}
+
+.input-text-container{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-continer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn{
+  margin-top: 3rem;
+  width: auto;
+  height: auto;
+  background-color: aliceblue;
+  font-size: 1.2rem;
+  color: darkslategray;
+  padding: 1.5rem;
+  border: none;
+  opacity: .4;
+  border-radius: 1rem;
+}
+
