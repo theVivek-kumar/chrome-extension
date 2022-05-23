@@ -35,21 +35,23 @@ const handleSearch = () => {
     setDisplay("none")
   }
 
-  useEffect(()=>{getWetherDetails(mycity)},[])
+  useEffect(()=>{getWetherDetails(mycity)},)
 
   return (
-    <div className="weather-container">
+    <div className="weather-container-top-right">
 
     { !mycity &&
 
-        <div className="weather-input" style={{display:display}}>
-        <p className=''>What is your current location</p>
+        <div className="weather-input" style={{ display: display }}>
+          <p className='location-heading'>What is your current location</p>
+           <div className='weather-input-search'> 
           <input type="text" className="input-container "
             value={inputCity}
             onChange={handleChangeInput} />
           <button className="btn btn-primary" type="button"
             onClick={handleSearch}
-          >Search</button>
+            >Search</button>
+            </div>
         </div>
     }
 

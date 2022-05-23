@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import Home from './Components/home';
+import Weather from './Components/Weather';
 
 function App() {
   const [name, setName] = useState()
@@ -19,7 +20,9 @@ function App() {
   width:'100%',
         height: '100vh',
       }}>
-        <div className='wrapper-continer'>
+        <div className='main-container'>
+        <div className='weather-input'><Weather /></div>
+         <div className='wrapper-continer'>
           <h2 className='heading--1'>Hello, What's your good name ,{name}</h2>
           <Home />
     
@@ -29,7 +32,8 @@ function App() {
         </div>
         
         </div>
-        </div>
+      </div>
+      </div>
     
   );
 }

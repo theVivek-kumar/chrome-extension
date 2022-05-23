@@ -1,14 +1,14 @@
 
 import React from 'react'
 import Clock from './Clock/Clock'
+import Weather from './Weather'
 
 
 function Home() {
     return (
-          <div className='main-container'>
-
-       <Clock/>
-        <h1 className='heading'>Good Evening, {}.</h1>
+      <div className='main-container'>
+        <Clock/>
+        <h1 className='heading-GE'>Good Evening, {}.</h1>
 
         {/* <div style={{display:display}}>
         <p className="para">What is your main focus for today?</p>
