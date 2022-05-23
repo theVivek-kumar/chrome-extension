@@ -71,10 +71,10 @@
   font-weight: 600;
   font-size: 1.2rem;
   z-index: 3;
-   /* position: absolute;
-  left: 0px;
-  top: 0px; */
- 
+
+}
+.quote{
+  color: black!important;
 }
 .weather-input{
   opacity: .7;
@@ -101,6 +101,7 @@
   border-radius: 5px;
   margin: .2rem;
   z-index: 13;
+  border: none;
 }
 .btn-primary{
   width: auto;
