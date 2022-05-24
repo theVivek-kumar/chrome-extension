@@ -31,7 +31,7 @@ function MainArea() {
           <div className='wrapper-continer'>
             <h2 className='heading--1 clock'><Clock /></h2>
             <h3 className='heading-GE'>Good Evening,{name}</h3>
-            <div className='input-text-container'><input className='input-name-section'
+            <div className='input-text-container'><input className='input-name-section checkbox-r'
               onChange={mainFocusHandler} value={isCheck}
               type="checkbox" placeholder="" />
               <p className='para-focus' style={{ textDecorationLine: style }}>{myfocus}</p>
