@@ -3,7 +3,7 @@ import { React, useState , useEffect} from 'react'
 
 function Weather() {
 
-  const apiKey = "f56f24967aaf51182d1d4df628297c6d"
+  const apiKey = "d87d98b3aea66ee5e9124538b7ef453c"
   const [inputCity,setInputCity] = useState("")
   const [data, setData] = useState({})
   const [ display , setDisplay ] = useState("inline")
