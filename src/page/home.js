@@ -12,7 +12,6 @@ function Home() {
   const [focus, setFocus] = useState("")
   const [view, setView] = useState("block")
   const navigate = useNavigate();
-  const myFocustoday = localStorage.getItem(focus);
   function keyHandler (e){
     if (e.key === "Enter") {
       localStorage.setItem('focus', focus);
@@ -34,6 +33,7 @@ function Home() {
                 <div className='wrapper-continer'>
                     <h2 className='heading--1 clock'><Clock/></h2>
             <h3 className='heading-GE'>Good Evening,{name}</h3>
+            <div style={{display:view}}></div>
             <h4 className='heading-main focus'>What is your main focus today</h4>
               <div className='input-text-container'><input className='input-name-section' type="text"
                   onKeyPress={keyHandler} 
