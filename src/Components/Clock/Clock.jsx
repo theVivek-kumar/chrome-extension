@@ -1,7 +1,7 @@
 
  import { React, useState} from 'react'
  export default function Clock() {
-     const time = new Date().toLocaleTimeString().match(/\d{2}:\d{2}|[AMP]+/g).join(' ');
+     const time = new Date().toLocaleTimeString();
      const [currentTime, setCurrentTime] = useState(time)
 
      const updatedTime = () => {

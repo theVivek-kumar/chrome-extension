@@ -7,7 +7,7 @@ function Quot() {
         fetch("https://api.quotable.io/random")
             .then((res) => res.json())
             .then((data) => {
-                // let randomNum = Math.floor(Math.random() * data.lenght);
+               
                 setQuote(data.content);
                 console.log(data.text)
                 setAuthor(data.author)
@@ -23,8 +23,9 @@ function Quot() {
 
     return (
         <>
-            <p>"{quote}"</p>
-            <h4>:-{author }</h4>
+           
+            <p className='quote-class'>"{quote}"</p>
+            <h4 className='quote-class'>:-{author }</h4>
         
            </>   )
       
