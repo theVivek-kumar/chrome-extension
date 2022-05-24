@@ -1,10 +1,10 @@
 import { React, useState , useEffect} from 'react'
-import axios from 'axios'
+
 
 function Weather() {
 
-  const apiKey = "f56f24967aaf51182d1d4df628297c6d"
-  const [inputCity, setInputCity] = useState("")
+  const apiKey = "d87d98b3aea66ee5e9124538b7ef453c"
+  const [inputCity,setInputCity] = useState("")
   const [data, setData] = useState({})
   const [ display , setDisplay ] = useState("inline")
 
@@ -13,12 +13,13 @@ function Weather() {
   const getWetherDetails = (cityName) => {
     if (!cityName) return
     const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=" + mycity + "&appid=" + apiKey
-    axios.get(apiURL)
-    .then((res) => {
-      console.log("response", res.data) 
-      setData(res.data)
+    fetch(apiURL)
+    .then((res)=>res.json())
+    .then((data) => {
+      console.log(data) 
+      setData(data)
     }).catch((err) => {
-      console.log("err", err)
+     
     })
   }
 
@@ -35,8 +36,12 @@ const handleSearch = () => {
     setDisplay("none")
   }
 
-  useEffect(()=>{getWetherDetails(mycity)},)
 
+  useEffect(() => {
+    getWetherDetails(mycity)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+ 
   return (
     <div className="weather-container-top-right">
 
