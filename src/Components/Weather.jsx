@@ -35,7 +35,7 @@ const handleSearch = () => {
     setDisplay("none")
   }
 
-  useEffect(()=>{getWetherDetails(mycity)},)
+  useEffect(()=>{getWetherDetails(mycity)},[])
 
   return (
     <div className="weather-container-top-right">
